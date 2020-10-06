@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#header {
+  background-color: #FC3636;
+  height: 45vh;
+  position: relative;
+}
+
+#header::before {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  content: '';
+  height: 500px;
+  width: 500px;
+  background: url(./asset/HeaderDesign.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#header #oycLogo {
+  height: 6rem;
+  width: 6rem;
+  background: url(./asset/oycLogo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  left: 2.5vw;
+}
+
+#header #signIn {
+  height: 3rem;
+  width: 7rem;
+  background: #FF5959;
+  text-align: center;
+  margin: 1rem 1rem 0 0;
+  padding-top: 1rem;
+  position: fixed;
+  right: 2.5vw;
+  border-radius: 300px;
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+#header #searchHeader {
+  background-color: #FC3636;
+  padding-top: 10rem;
+}
+
+#header #searchHeader #searchForm {
+  padding-left: 25vw;
+}
+
+#header #searchHeader #searchForm label {
+  display: block;
+  font-family: "Overpass", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 2px;
+  color: white;
+}
+
+#header #searchHeader #searchForm #searchInput {
+  margin-top: 1rem;
+  display: inline-block;
+  width: 50vw;
+  height: 10vh;
+  border-radius: 300px;
+  border: none;
+  outline: none;
+  padding-left: 2rem;
+}
+
+#header #searchHeader #searchForm button {
+  position: relative;
+  top: 2rem;
+  left: 1rem;
+  height: 70px;
+  width: 70px;
+  outline: none;
+  border: none;
+  border-radius: 300px;
+  z-index: 1;
+  background: url(./asset/SearchIcon.svg);
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  cursor: pointer;
+}
+
+#header #searchHeader #searchForm button::before {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  height: 85px;
+  width: 85px;
+  background-color: rgba(255, 255, 255, 0.5);
+  content: '';
+  border-radius: 300px;
+}
+
+.clearfloat {
+  clear: both;
+}
+/*# sourceMappingURL=main.css.map */

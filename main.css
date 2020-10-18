@@ -80,6 +80,7 @@ body {
   font-size: 20px;
   line-height: 2px;
   color: white;
+  margin-left: 0.6rem;
 }
 
 #header #searchHeader #searchForm #searchInput {
@@ -91,6 +92,8 @@ body {
   border: none;
   outline: none;
   padding-left: 2rem;
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
 }
 
 #header #searchHeader #searchForm button {
@@ -103,7 +106,7 @@ body {
   border: none;
   border-radius: 300px;
   z-index: 1;
-  background: url(./asset/SearchIcon.svg);
+  background: url(./asset/Vector.svg);
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,7 +125,33 @@ body {
   border-radius: 300px;
 }
 
-.clearfloat {
-  clear: both;
+#explorePage #topThree {
+  height: 50px;
+  width: 100px;
+  background-color: #FC3636;
+  -webkit-filter: drop-shadow(0px 0px 4px #FC3636);
+          filter: drop-shadow(0px 0px 4px #FC3636);
+  margin: 2rem 0 0 2rem;
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 300px;
+}
+
+#explorePage #featuredPosts {
+  margin: 2rem 0 0 0;
+}
+
+#explorePage #featuredPosts .topPosts {
+  display: inline-block;
+  height: 17rem;
+  width: 20vw;
+  background-color: white;
+  margin-left: 5rem;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(196, 196, 196, 0.25);
+          box-shadow: 0px 0px 20px 1px rgba(196, 196, 196, 0.25);
 }
 /*# sourceMappingURL=main.css.map */

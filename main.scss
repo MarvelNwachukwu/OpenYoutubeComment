@@ -9,6 +9,7 @@
 }
 body{
   overflow-x: hidden;
+  // background-color: blue;
 }
 #header{
   background-color: $base-orange;
@@ -75,6 +76,7 @@ body{
         font-size: 20px;
         line-height: 2px;
         color: white;
+        margin-left: 0.6rem;
       }
 
       #searchInput{
@@ -86,6 +88,8 @@ body{
         border: none;
         outline: none;
         padding-left: 2rem;
+        font-size: 20px;
+        font-family: $base-font;
       }
       button{
         position: relative;
@@ -97,7 +101,7 @@ body{
         border: none;
         border-radius: 300px;
         z-index: 1; 
-        background: url(./asset/SearchIcon.svg);
+        background: url(./asset/Vector.svg);
         background-color: white;
         background-position: center;
         background-repeat: no-repeat;
@@ -121,6 +125,30 @@ body{
 }
 
 
-.clearfloat{
-  clear: both;
+#explorePage{
+  #topThree{
+    height: 50px;
+    width: 100px;
+    background-color: #FC3636;
+    filter: drop-shadow(0px 0px 4px #FC3636);
+    margin: 2rem 0 0 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    font-family: $base-font;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 300px;
+  }
+  #featuredPosts{
+    margin: 2rem 0 0 0;
+    .topPosts{
+      display: inline-block;
+      height: 17rem;
+      width:20vw;
+      background-color: rgb(255, 255, 255);
+      margin-left: 5rem;
+      box-shadow: 0px 0px 20px 1px rgba(196, 196, 196, 0.25);
+    }
+  }
 }

@@ -98,7 +98,7 @@ body {
 
 #header #searchHeader #searchForm button {
   position: relative;
-  top: 2rem;
+  top: -0.2rem;
   left: 1rem;
   height: 70px;
   width: 70px;
@@ -131,7 +131,7 @@ body {
   background-color: #FC3636;
   -webkit-filter: drop-shadow(0px 0px 4px #FC3636);
           filter: drop-shadow(0px 0px 4px #FC3636);
-  margin: 2rem 0 0 2rem;
+  margin: 2rem 0 0 5rem;
   text-align: center;
   padding-top: 1rem;
   color: white;
@@ -147,11 +147,45 @@ body {
 
 #explorePage #featuredPosts .topPosts {
   display: inline-block;
-  height: 17rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 20vw;
   background-color: white;
   margin-left: 5rem;
   -webkit-box-shadow: 0px 0px 20px 1px rgba(196, 196, 196, 0.25);
           box-shadow: 0px 0px 20px 1px rgba(196, 196, 196, 0.25);
+}
+
+#explorePage #featuredPosts .topPosts .thumbnail {
+  height: 190px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #FC3636;
+}
+
+#explorePage #featuredPosts .topPosts #thumbnailOne {
+  background: url(./asset/placeholder1.svg);
+}
+
+#explorePage #featuredPosts .topPosts #thumbnailTwo {
+  background: url(./asset/placeholder2.svg);
+}
+
+#explorePage #featuredPosts .topPosts #thumbnailThree {
+  background: url(./asset/placeholder1.svg);
+}
+
+#explorePage #featuredPosts .topPosts .title {
+  font-family: "Overpass", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1rem 0 1rem 1rem;
+}
+
+#explorePage #featuredPosts .topPosts .totalcomment {
+  margin: 0 0 2rem 1rem;
+  color: #B9B9B9;
 }
 /*# sourceMappingURL=main.css.map */

@@ -93,7 +93,7 @@ body{
       }
       button{
         position: relative;
-        top: 2rem;
+        top: -0.2rem;
         left: 1rem;
         height: 70px;
         width: 70px;
@@ -131,7 +131,7 @@ body{
     width: 100px;
     background-color: #FC3636;
     filter: drop-shadow(0px 0px 4px #FC3636);
-    margin: 2rem 0 0 2rem;
+    margin: 2rem 0 0 5rem;
     text-align: center;
     padding-top: 1rem;
     color: white;
@@ -144,11 +144,41 @@ body{
     margin: 2rem 0 0 0;
     .topPosts{
       display: inline-block;
-      height: 17rem;
+      height: fit-content;
       width:20vw;
       background-color: rgb(255, 255, 255);
       margin-left: 5rem;
       box-shadow: 0px 0px 20px 1px rgba(196, 196, 196, 0.25);
+
+      .thumbnail{
+        height: 190px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: #FC3636;
+      }
+      
+      #thumbnailOne {
+        background: url(./asset/placeholder1.svg);
+      }    
+      #thumbnailTwo{
+        background: url(./asset/placeholder2.svg);
+      }
+      #thumbnailThree{
+        background: url(./asset/placeholder1.svg);
+      }
+
+      .title{
+        font-family: $base-font;
+        font-style: normal;
+        font-weight: bold;
+        margin: 1rem 0 1rem 1rem;
+      }
+      .totalcomment{
+        margin: 0 0 2rem 1rem;
+        color: #B9B9B9;
+      }
+        
     }
   }
 }

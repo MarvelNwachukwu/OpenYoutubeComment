@@ -40,6 +40,10 @@ body{
     left: 2.5vw;
   }
 
+  // =========================================================
+  // SignIn & SignedIn
+  // =========================================================
+
   #signIn{
     height: 3rem;
     width: 7rem;
@@ -59,6 +63,37 @@ body{
     cursor: pointer;
   }
 
+  #signedIn{
+    height: 3rem;
+    width: 7rem;
+    background: $light-orange;
+    text-align: left;
+    margin: 1rem 1rem 0 0;
+    padding: 1rem 0 0 2rem;
+    position: fixed;
+    right: 2.5vw;  
+    border-radius: 300px;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size:16px;
+    color: white;
+    user-select: none;
+    cursor: pointer;  
+    // position: relative;
+
+    &::after{
+      height: 3rem;
+      width: 3rem;
+      content: '';
+      background-color: aqua;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 300px;
+    }
+  }
 
   #searchHeader{
     background-color: $base-orange;
@@ -193,3 +228,7 @@ body{
   height: 17rem;
   margin:10rem 0 0 15rem;
 }
+
+
+
+

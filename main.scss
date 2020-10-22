@@ -13,7 +13,7 @@ body{
 }
 #header{
   background-color: $base-orange;
-  height: 45vh;
+  height: fit-content;
   position: relative;
 
   &::before{
@@ -90,6 +90,8 @@ body{
         padding-left: 2rem;
         font-size: 20px;
         font-family: $base-font;
+        margin-bottom: 4rem;
+
       }
       button{
         position: relative;
@@ -181,4 +183,13 @@ body{
         
     }
   }
+}
+
+
+// ============================================================
+//                           Comment Page
+// ============================================================
+#mediaPlayer{
+  height: 17rem;
+  margin:10rem 0 0 15rem;
 }

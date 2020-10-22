@@ -13,7 +13,9 @@ body {
 
 #header {
   background-color: #FC3636;
-  height: 45vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
 }
 
@@ -94,6 +96,7 @@ body {
   padding-left: 2rem;
   font-size: 20px;
   font-family: "Overpass", sans-serif;
+  margin-bottom: 4rem;
 }
 
 #header #searchHeader #searchForm button {
@@ -187,5 +190,10 @@ body {
 #explorePage #featuredPosts .topPosts .totalcomment {
   margin: 0 0 2rem 1rem;
   color: #B9B9B9;
+}
+
+#mediaPlayer {
+  height: 17rem;
+  margin: 10rem 0 0 15rem;
 }
 /*# sourceMappingURL=main.css.map */
